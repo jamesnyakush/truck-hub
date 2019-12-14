@@ -31,7 +31,9 @@
             android:id="@+id/bottom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true" />
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white"
+            app:menu="@menu/main_menu"/>
 
     </RelativeLayout>
 

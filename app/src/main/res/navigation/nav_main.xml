@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_main">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/main">
 
+    <fragment
+        android:id="@+id/main"
+        android:name="com.jamesnyakush.carhub.ui.home.Home"
+        android:label="fragment_main"
+        tools:layout="@layout/home_fragment" />
+    <fragment
+        android:id="@+id/payment2"
+        android:name="com.jamesnyakush.carhub.ui.payment.Payment"
+        android:label="payment_fragment"
+        tools:layout="@layout/payment_fragment" />
+    <fragment
+        android:id="@+id/favourite"
+        android:name="com.jamesnyakush.carhub.ui.favourites.Favourite"
+        android:label="favourite_fragment"
+        tools:layout="@layout/favourite_fragment" />
+    <fragment
+        android:id="@+id/history2"
+        android:name="com.jamesnyakush.carhub.ui.history.History"
+        android:label="history_fragment"
+        tools:layout="@layout/history_fragment" />
 </navigation>
