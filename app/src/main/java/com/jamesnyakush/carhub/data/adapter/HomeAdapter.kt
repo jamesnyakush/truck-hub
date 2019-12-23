@@ -5,11 +5,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.jamesnyakush.carhub.R
-import com.jamesnyakush.carhub.data.model.HomeModel
+import com.jamesnyakush.carhub.data.db.entity.Home
 import kotlinx.android.synthetic.main.item_home.view.*
 
 
-class HomeAdapter(val trucks: List<HomeModel>) :
+class HomeAdapter(val trucks: List<Home>) :
     RecyclerView.Adapter<HomeAdapter.HomeViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =

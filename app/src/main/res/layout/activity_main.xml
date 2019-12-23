@@ -4,14 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/layout_main"
     android:background="#ededed"
     tools:context=".ui.main.MainActivity">
 
-    <!--    <com.google.android.material.appbar.AppBarLayout-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content">-->
-    <!--        -->
-    <!--    </com.google.android.material.appbar.AppBarLayout>-->
+<!--        <com.google.android.material.appbar.AppBarLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <androidx.appcompat.widget.Toolbar-->
+<!--                android:id="@+id/toolbar"-->
+<!--                android:background="?colorPrimary"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+<!--        </com.google.android.material.appbar.AppBarLayout>-->
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -23,8 +30,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@id/bottom"
-            app:defaultNavHost="true"
-            app:navGraph="@navigation/nav_main" />
+            app:defaultNavHost="false"
+            app:navGraph="@navigation/nav_main"
+            tools:ignore="FragmentTagUsage" />
 
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -33,8 +41,9 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:background="@android:color/white"
-            app:menu="@menu/main_menu"/>
+            app:labelVisibilityMode="labeled"
+            app:elevation="8dp"
+            app:menu="@menu/main_menu" />
 
     </RelativeLayout>
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,20 +1,20 @@
 package com.jamesnyakush.carhub.ui.payment
 
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProviders
 import com.jamesnyakush.carhub.R
+import org.kodein.di.KodeinAware
+import org.kodein.di.android.x.kodein
+import org.kodein.di.generic.instance
 
-class Payment : Fragment() {
+class Payment : Fragment(), KodeinAware {
+    override val kodein by kodein()
 
-    companion object {
-        fun newInstance() = Payment()
-    }
-
+    private val factory: PaymentViewModelFactory by instance()
     private lateinit var viewModel: PaymentViewModel
 
     override fun onCreateView(
@@ -26,7 +26,7 @@ class Payment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(PaymentViewModel::class.java)
+        viewModel = ViewModelProviders.of(this,factory).get(PaymentViewModel::class.java)
     }
 
 }

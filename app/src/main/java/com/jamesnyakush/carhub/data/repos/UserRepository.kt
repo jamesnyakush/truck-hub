@@ -1,14 +1,32 @@
 package com.jamesnyakush.carhub.data.repos
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
+import com.jamesnyakush.carhub.data.db.AppDatabase
+import com.jamesnyakush.carhub.data.db.entity.User
+import com.jamesnyakush.carhub.data.network.RetrofitBuilder
 import com.jamesnyakush.carhub.data.network.SafeApiRequest
+import com.jamesnyakush.carhub.data.network.response.AuthResponse
 
-class UserRepository : SafeApiRequest(){
-   suspend fun userLogin(email: String, password: String): LiveData<String> {
+class UserRepository(
+    private val db: AppDatabase
+) : SafeApiRequest() {
 
-        val loginResponse = MutableLiveData<String>()
-
-        return loginResponse
+    suspend fun userLogin(
+        email: String,
+        password: String
+    ): AuthResponse {
+        return apiRequest { RetrofitBuilder.apiService.userLogin(email, password) }
     }
+
+    suspend fun userSignup(
+        name: String,
+        email: String,
+        password: String
+    ): AuthResponse {
+        return apiRequest{ RetrofitBuilder.apiService.userSignup(name,email,password)}
+
+    }
+
+    suspend fun saveUser(user: User) = db.getUserDao().upsert(user)
+
+    fun getUser() = db.getUserDao().getUser()
 }

@@ -8,21 +8,21 @@
     <fragment
         android:id="@+id/main"
         android:name="com.jamesnyakush.carhub.ui.home.Home"
-        android:label="fragment_main"
+        android:label="Trucks"
         tools:layout="@layout/home_fragment" />
     <fragment
-        android:id="@+id/payment2"
+        android:id="@+id/payment_fragment"
         android:name="com.jamesnyakush.carhub.ui.payment.Payment"
-        android:label="payment_fragment"
+        android:label="Payment"
         tools:layout="@layout/payment_fragment" />
     <fragment
-        android:id="@+id/favourite"
+        android:id="@+id/favourite_fragment"
         android:name="com.jamesnyakush.carhub.ui.favourites.Favourite"
-        android:label="favourite_fragment"
+        android:label="Favourite"
         tools:layout="@layout/favourite_fragment" />
     <fragment
-        android:id="@+id/history2"
+        android:id="@+id/history_fragment"
         android:name="com.jamesnyakush.carhub.ui.history.History"
-        android:label="history_fragment"
+        android:label="History"
         tools:layout="@layout/history_fragment" />
 </navigation>
