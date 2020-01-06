@@ -15,4 +15,8 @@
     <string name="already_have_an_account">Already have an account ?</string>
     <string name="login">Login</string>
     <string name="need_an_account">Need an account ?</string>
+    <string name="logout_message">Are you sure u want to logout</string>
+    <string name="quit">Want to Quit</string>
+    <string name="enter_phone">Enter Phone</string>
+    <string name="profile_image_desc">profile image desc</string>
 </resources>

@@ -38,7 +38,7 @@ object PreferenceHelper {
             is Boolean -> edit { it.putBoolean(key, value) }
             is Float -> edit { it.putFloat(key, value) }
             is Long -> edit { it.putLong(key, value) }
-            else -> throw UnsupportedOperationException("Unsupported Operation")
+            else -> throw UnsupportedOperationException("Unsupported Operation") as Throwable
         }
     }
 

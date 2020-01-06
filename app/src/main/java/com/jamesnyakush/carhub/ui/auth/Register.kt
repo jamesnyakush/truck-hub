@@ -10,7 +10,7 @@ import com.jamesnyakush.carhub.R
 import com.jamesnyakush.carhub.data.db.entity.User
 import com.jamesnyakush.carhub.data.listeners.AuthListener
 import com.jamesnyakush.carhub.databinding.ActivityRegisterBinding
-import com.jamesnyakush.carhub.ui.main.MainActivity
+import com.jamesnyakush.carhub.ui.home.main.MainActivity
 import com.jamesnyakush.carhub.util.snackbar
 import com.jamesnyakush.carhub.util.toast
 import kotlinx.android.synthetic.main.activity_register.*

@@ -15,6 +15,7 @@
         android:id="@+id/register_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@android:color/white"
         tools:context=".ui.auth.Register">
 
         <ImageView
@@ -38,10 +39,10 @@
                 android:layout_margin="8dp"
                 android:background="@drawable/layout_border"
                 android:hint="@string/enter_username"
-                android:padding="12dp"
-                android:text="@={viewmodel.name}"
                 android:importantForAutofill="no"
-                android:inputType="text" />
+                android:inputType="text"
+                android:padding="12dp"
+                android:text="@={viewmodel.name}" />
 
             <EditText
                 android:layout_width="match_parent"

@@ -4,18 +4,24 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.jamesnyakush.carhub.data.db.dao.TruckDao
 import com.jamesnyakush.carhub.data.db.dao.UserDao
+import com.jamesnyakush.carhub.data.db.entity.Truck
 import com.jamesnyakush.carhub.data.db.entity.User
 
 
 @Database(
-    entities = [User::class],
+    entities = [
+        User::class,
+        Truck::class
+    ],
     version = 1,
     exportSchema = false
 )
 
 abstract class AppDatabase : RoomDatabase() {
     abstract fun getUserDao(): UserDao
+    abstract fun getTruckDao(): TruckDao
 
     companion object {
         @Volatile
@@ -31,7 +37,6 @@ abstract class AppDatabase : RoomDatabase() {
             context.applicationContext,
             AppDatabase::class.java,
             "truckdata"
-
         ).build()
     }
 }

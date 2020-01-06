@@ -12,7 +12,7 @@ import com.jamesnyakush.carhub.util.Constants.CURRENT_USER_ID
 interface UserDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-   suspend fun upsert(user: User): Long
+    suspend fun upsert(user: User): Long
 
     @Query("SELECT * FROM User WHERE uid= $CURRENT_USER_ID")
     fun getUser(): LiveData<User>

@@ -3,16 +3,13 @@ package com.jamesnyakush.carhub
 import android.app.Application
 import com.jamesnyakush.carhub.data.db.AppDatabase
 import com.jamesnyakush.carhub.data.network.NetworkConnectionInterceptor
-import com.jamesnyakush.carhub.data.network.RetrofitBuilder
-import com.jamesnyakush.carhub.data.repos.HistoryRepository
-import com.jamesnyakush.carhub.data.repos.HomeRepository
-import com.jamesnyakush.carhub.data.repos.PaymentRepository
-import com.jamesnyakush.carhub.data.repos.UserRepository
+import com.jamesnyakush.carhub.data.repos.*
 import com.jamesnyakush.carhub.ui.auth.AuthViewModelFactory
-import com.jamesnyakush.carhub.ui.history.HistoryViewModelFactory
-import com.jamesnyakush.carhub.ui.home.HomeViewModelFactory
-import com.jamesnyakush.carhub.ui.payment.PaymentViewModel
-import com.jamesnyakush.carhub.ui.payment.PaymentViewModelFactory
+import com.jamesnyakush.carhub.ui.home.favourites.FavouriteViewModelFactory
+import com.jamesnyakush.carhub.ui.home.history.HistoryViewModelFactory
+import com.jamesnyakush.carhub.ui.home.home.HomeViewModelFactory
+import com.jamesnyakush.carhub.ui.home.payment.PaymentViewModelFactory
+import com.jamesnyakush.carhub.util.pref.SessionManager
 import org.kodein.di.Kodein
 import org.kodein.di.KodeinAware
 import org.kodein.di.android.x.androidXModule
@@ -29,14 +26,16 @@ class CarHub : Application(), KodeinAware{
         bind() from singleton { AppDatabase(instance()) }
         bind() from  singleton { UserRepository(instance()) }
         bind() from  singleton { PaymentRepository(instance()) }
-        bind() from  singleton { HomeRepository(instance()) }
+        bind() from singleton { SessionManager(instance()) }
+        bind() from  singleton { TruckRepository(instance(),instance()) }
         bind() from  singleton { HistoryRepository(instance()) }
-
+        bind() from singleton { FavouriteRepository(instance()) }
 
         bind() from provider { AuthViewModelFactory(instance()) }
         bind() from provider { PaymentViewModelFactory(instance()) }
         bind() from provider { HomeViewModelFactory(instance()) }
         bind() from provider { HistoryViewModelFactory(instance()) }
+        bind() from provider { FavouriteViewModelFactory(instance()) }
 
     }
 }

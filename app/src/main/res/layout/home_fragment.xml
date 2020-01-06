@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#ededed"
     android:orientation="vertical"
-    tools:context=".ui.home.Home">
+    tools:context=".ui.home.home.Home">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/main_recycler"
