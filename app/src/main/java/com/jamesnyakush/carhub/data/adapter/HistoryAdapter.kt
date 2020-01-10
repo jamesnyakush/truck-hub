@@ -5,10 +5,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.jamesnyakush.carhub.R
+import com.jamesnyakush.carhub.data.db.entity.Truck
 import kotlinx.android.synthetic.main.item_home.view.*
 
 class HistoryAdapter(
-    val trucks: List<Home>
+    val trucks: List<Truck>
 ) : RecyclerView.Adapter<HistoryAdapter.HistoryViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
@@ -21,8 +22,8 @@ class HistoryAdapter(
     override fun onBindViewHolder(holder: HistoryViewHolder, position: Int) {
         val trucks = trucks[position]
 
-        holder.v.name.text = trucks.name
-        holder.v.reg.text = trucks.reg
+//        holder.v.name.text = trucks.name
+//        holder.v.reg.text = trucks.reg
         holder.v.manu.text = trucks.manufacturer
     }
 
