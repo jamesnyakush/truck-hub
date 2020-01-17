@@ -39,7 +39,12 @@ class TruckRepository(
     private suspend fun fetchTrucks() {
         val lastSavedAt = prefs.getLastSavedAt()
 
-        if (lastSavedAt == null || isFetchNeeded(LocalDateTime.parse(lastSavedAt))) {
+        if (if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                lastSavedAt == null || isFetchNeeded(LocalDateTime.parse(lastSavedAt))
+            } else {
+                TODO("VERSION.SDK_INT < O")
+            }
+        ) {
 
             val response = apiRequest { RetrofitBuilder.apiService.getTrucks() }
 
