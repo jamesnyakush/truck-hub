@@ -10,7 +10,7 @@
 
 
 ## Features
-☑ Booking
+☑ Booking<br/>
 ☑️️ Payment 
 
 
