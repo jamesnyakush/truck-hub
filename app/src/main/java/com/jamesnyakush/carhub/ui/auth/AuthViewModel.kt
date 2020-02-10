@@ -19,7 +19,7 @@ class AuthViewModel(
     var authListener: AuthListener? = null
 
     fun getLoggedInUser() = repository.getUser()
-ref
+
 
     fun onLoginButtonClick(view: View) {
         if (email.isNullOrEmpty() || password.isNullOrEmpty()) {
