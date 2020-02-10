@@ -4,6 +4,8 @@
 
 ## Screenshots
 
+<img src="https://github.com/jamesnyakush/truck-hub/blob/master/art/splash.png" width="200"/> <img src="https://github.com/jamesnyakush/truck-hub/blob/master/art/login.png" width="200"/> <img src="https://github.com/jamesnyakush/truck-hub/blob/master/art/register.png" width="200"/>
+
 
 ## Background
 
