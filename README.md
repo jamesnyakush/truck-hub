@@ -4,7 +4,7 @@
 
 ## Screenshots
 
-<img src="https://github.com/jamesnyakush/truck-hub/blob/master/art/splash.png" width="300"/> <img src="https://github.com/jamesnyakush/truck-hub/blob/master/art/login.png" width="300"/> <img src="https://github.com/jamesnyakush/truck-hub/blob/master/art/register.png" width="300"/>
+<img src="https://github.com/jamesnyakush/truck-hub/blob/master/art/splash.png" width="250"/> <img src="https://github.com/jamesnyakush/truck-hub/blob/master/art/login.png" width="250"/> <img src="https://github.com/jamesnyakush/truck-hub/blob/master/art/register.png" width="250"/>
 
 
 ## Background
