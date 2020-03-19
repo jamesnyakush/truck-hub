@@ -1,6 +1,5 @@
 package com.jamesnyakush.carhub.data.network
 
-import com.jamesnyakush.carhub.data.db.entity.Truck
 import com.jamesnyakush.carhub.data.network.response.AuthResponse
 import com.jamesnyakush.carhub.data.network.response.TruckResponse
 import retrofit2.Response
