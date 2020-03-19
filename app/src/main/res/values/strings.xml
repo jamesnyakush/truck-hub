@@ -19,4 +19,8 @@
     <string name="quit">Want to Quit</string>
     <string name="enter_phone">Enter Phone</string>
     <string name="profile_image_desc">profile image desc</string>
+    <string name="title_home">Home</string>
+    <string name="title_payment">Payment</string>
+    <string name="title_favourite">Favourite</string>
+    <string name="title_history">History</string>
 </resources>

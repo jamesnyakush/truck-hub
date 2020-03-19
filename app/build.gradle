@@ -41,6 +41,9 @@ android {
     dataBinding {
         enabled = true
     }
+    dynamicFeatures = [":Home", ":Payment", ":Favourite", ":History"]
+
+
 }
 
 dependencies {

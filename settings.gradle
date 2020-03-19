@@ -1,2 +1,7 @@
 include ':app'
 rootProject.name='Car Hub'
+include ':core'
+include ':Home'
+include ':Payment'
+include ':Favourite'
+include ':History'
