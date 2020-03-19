@@ -53,7 +53,7 @@ dependencies {
     def lifecycle = "2.1.0"
     def kodein = "6.2.1"
     def room = "2.2.2"
-    def navigation = "2.2.0-rc03"
+    def navigation = "2.3.0-alpha01"
     def androidx_test_espresso = "3.1.0"
     def mockito_core = "2.25.0"
     def mockito_android = "2.25.0"
@@ -116,6 +116,7 @@ dependencies {
     //Android Navigation Architecture
     implementation "androidx.navigation:navigation-fragment-ktx:${navigation}"
     implementation "androidx.navigation:navigation-ui-ktx:${navigation}"
+    implementation "androidx.navigation:navigation-dynamic-features-fragment:$navigation"
 
     api 'de.hdodenhof:circleimageview:3.0.1'
     api 'com.github.dhaval2404:imagepicker-support:1.5'
