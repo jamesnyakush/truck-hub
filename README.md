@@ -21,6 +21,14 @@
 
 ## Libraries used
 
+Made with [contributors-img](https://contributors-img.web.app).
+
+<a href="https://github.com/jamesnyakush/truck-hub/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=jamesnyakush/truck-hub" />
+</a>
+
+
+
 
 
 
