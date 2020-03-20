@@ -5,10 +5,6 @@ import com.jamesnyakush.carhub.data.db.AppDatabase
 import com.jamesnyakush.carhub.data.network.NetworkConnectionInterceptor
 import com.jamesnyakush.carhub.data.repos.*
 import com.jamesnyakush.carhub.ui.auth.AuthViewModelFactory
-import com.jamesnyakush.carhub.ui.home.favourites.FavouriteViewModelFactory
-import com.jamesnyakush.carhub.ui.home.history.HistoryViewModelFactory
-import com.jamesnyakush.carhub.ui.home.home.HomeViewModelFactory
-import com.jamesnyakush.carhub.ui.home.payment.PaymentViewModelFactory
 import com.jamesnyakush.carhub.util.pref.SessionManager
 import org.kodein.di.Kodein
 import org.kodein.di.KodeinAware
@@ -32,10 +28,10 @@ class CarHub : Application(), KodeinAware{
         bind() from singleton { FavouriteRepository(instance()) }
 
         bind() from provider { AuthViewModelFactory(instance()) }
-        bind() from provider { PaymentViewModelFactory(instance()) }
-        bind() from provider { HomeViewModelFactory(instance()) }
-        bind() from provider { HistoryViewModelFactory(instance()) }
-        bind() from provider { FavouriteViewModelFactory(instance()) }
+//        bind() from provider { PaymentViewModelFactory(instance()) }
+//        bind() from provider { HomeViewModelFactory(instance()) }
+//        bind() from provider { HistoryViewModelFactory(instance()) }
+//        bind() from provider { FavouriteViewModelFactory(instance()) }
 
     }
 }

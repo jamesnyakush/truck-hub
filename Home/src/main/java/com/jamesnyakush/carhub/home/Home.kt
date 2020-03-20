@@ -1,4 +1,4 @@
-package com.jamesnyakush.history
+package com.jamesnyakush.carhub.home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,13 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 
 
-class History : Fragment() {
+class Home : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.history_fragment, container, false)
+        return inflater.inflate(R.layout.home_fragment, container, false)
     }
 
 }
