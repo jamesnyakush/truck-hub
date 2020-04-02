@@ -45,6 +45,8 @@ Made with [contributors-img](https://contributors-img.web.app).
 </a>
 
 
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fjamesnyakush%2Ftruck-hub.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fjamesnyakush%2Ftruck-hub?ref=badge_large)
+
 ```
 Copyright 2018 jamesnyakush
 
