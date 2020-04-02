@@ -44,6 +44,8 @@ Made with [contributors-img](https://contributors-img.web.app).
   <img src="https://contributors-img.web.app/image?repo=jamesnyakush/truck-hub" />
 </a>
 
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fjamesnyakush%2Ftruck-hub.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fjamesnyakush%2Ftruck-hub?ref=badge_shield)
+
 
 ```
 Copyright 2018 jamesnyakush
@@ -63,6 +65,7 @@ WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 License for the specific language governing permissions and limitations under
 the License.
 ```
+
 
 
 
