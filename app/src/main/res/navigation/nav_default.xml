@@ -3,30 +3,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_default"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/main">
 
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.jamesnyakush.carhub.home.Home"
-        android:label="Home"
         app:moduleName="Home"
+        android:id="@+id/main"
+        android:name="com.jamesnyakush.carhub.home.ui.Home"
+        android:label="Home"
         tools:layout="@layout/home_fragment" />
 
     <fragment
-        android:id="@+id/paymentFragment"
-        android:name="com.jamesnyakush.carhub.payment.Payment"
+        android:id="@+id/payment_fragment"
+        android:name="com.jamesnyakush.carhub.payment.ui.Payment"
         android:label="Payment"
         app:moduleName="Payment"
         tools:layout="@layout/payment_fragment" />
     <fragment
-        android:id="@+id/favouriteFragment"
-        android:name="com.jamesnyakush.carhub.favourite.Favourite"
+        android:id="@+id/favourite_fragment"
+        android:name="com.jamesnyakush.carhub.favourite.ui.FavouriteFragment"
         android:label="Favourite"
         app:moduleName="Favourite"
         tools:layout="@layout/favourite_fragment" />
     <fragment
-        android:id="@+id/historyFragment"
-        android:name="com.jamesnyakush.carhub.history.History"
+        android:id="@+id/history_fragment"
+        android:name="com.jamesnyakush.carhub.history.ui.History"
         android:label="History"
         app:moduleName="History"
         tools:layout="@layout/history_fragment" />

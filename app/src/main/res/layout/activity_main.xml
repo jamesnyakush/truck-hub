@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <androidx.fragment.app.FragmentContainerView
+        <fragment
             android:id="@+id/fragment"
             android:name="androidx.navigation.dynamicfeatures.fragment.DynamicNavHostFragment"
             android:layout_width="match_parent"
@@ -32,7 +32,7 @@
             android:layout_above="@id/bottom"
             app:defaultNavHost="true"
             app:navGraph="@navigation/nav_default"
-            tools:ignore="FragmentTagUsage" />
+            />
 
 
         <com.google.android.material.bottomnavigation.BottomNavigationView

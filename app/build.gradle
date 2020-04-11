@@ -1,14 +1,7 @@
 apply plugin: 'com.android.application'
-
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
-
-//kotlin kapt and navigation safeargs plugin
 apply plugin: 'kotlin-kapt'
-
-//apply plugin: "androidx.navigation.safeargs"
-
 apply plugin: 'com.google.gms.google-services'
 
 
@@ -114,8 +107,8 @@ dependencies {
     kapt "androidx.room:room-compiler:${room}"
 
     //Android Navigation Architecture
-    api "androidx.navigation:navigation-fragment-ktx:${navigation}"
-    api "androidx.navigation:navigation-ui-ktx:${navigation}"
+    api "androidx.navigation:navigation-fragment-ktx:$navigation"
+    api "androidx.navigation:navigation-ui-ktx:$navigation"
     api "androidx.navigation:navigation-dynamic-features-fragment:$navigation"
 
     api 'de.hdodenhof:circleimageview:3.0.1'
