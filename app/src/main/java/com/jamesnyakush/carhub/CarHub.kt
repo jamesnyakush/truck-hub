@@ -21,17 +21,11 @@ class CarHub : Application(), KodeinAware{
         bind() from singleton { NetworkConnectionInterceptor(instance()) }
         bind() from singleton { AppDatabase(instance()) }
         bind() from  singleton { UserRepository(instance()) }
-        bind() from  singleton { PaymentRepository(instance()) }
         bind() from singleton { SessionManager(instance()) }
-        bind() from  singleton { TruckRepository(instance(),instance()) }
-        bind() from  singleton { HistoryRepository(instance()) }
-        bind() from singleton { FavouriteRepository(instance()) }
+
 
         bind() from provider { AuthViewModelFactory(instance()) }
-//        bind() from provider { PaymentViewModelFactory(instance()) }
-//        bind() from provider { HomeViewModelFactory(instance()) }
-//        bind() from provider { HistoryViewModelFactory(instance()) }
-//        bind() from provider { FavouriteViewModelFactory(instance()) }
+
 
     }
 }

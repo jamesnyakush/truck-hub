@@ -1,4 +1,4 @@
-package com.jamesnyakush.carhub.data.repos
+package com.jamesnyakush.carhub.history.data.repo
 
 import com.jamesnyakush.carhub.data.db.AppDatabase
 import com.jamesnyakush.carhub.data.network.SafeApiRequest
