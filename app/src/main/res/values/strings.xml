@@ -23,4 +23,6 @@
     <string name="title_payment">Payment</string>
     <string name="title_favourite">Favourite</string>
     <string name="title_history">History</string>
+    <string name="title_about">about</string>
+    <string name="title_settings">settings</string>
 </resources>

@@ -9,7 +9,7 @@ import android.os.Build
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import com.jamesnyakush.carhub.R
-import com.jamesnyakush.carhub.ui.home.main.MainActivity
+import com.jamesnyakush.carhub.ui.activity.main.MainActivity
 import com.jamesnyakush.carhub.util.Constants.CHANNEL_DESC
 import com.jamesnyakush.carhub.util.Constants.CHANNEL_ID
 import com.jamesnyakush.carhub.util.Constants.CHANNEL_NAME

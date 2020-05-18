@@ -8,19 +8,19 @@
     <fragment
         app:moduleName="Home"
         android:id="@+id/main"
-        android:name="com.jamesnyakush.carhub.home.ui.Home"
+        android:name="com.jamesnyakush.carhub.home.ui.fragment.Home"
         android:label="Home"
         tools:layout="@layout/home_fragment" />
 
     <fragment
         android:id="@+id/payment_fragment"
-        android:name="com.jamesnyakush.carhub.payment.ui.Payment"
+        android:name="com.jamesnyakush.carhub.payment.ui.fragment.Payment"
         android:label="Payment"
         app:moduleName="Payment"
         tools:layout="@layout/payment_fragment" />
     <fragment
         android:id="@+id/favourite_fragment"
-        android:name="com.jamesnyakush.carhub.favourite.ui.FavouriteFragment"
+        android:name="com.jamesnyakush.carhub.favourite.ui.fragment.FavouriteFragment"
         android:label="Favourite"
         app:moduleName="Favourite"
         tools:layout="@layout/favourite_fragment" />

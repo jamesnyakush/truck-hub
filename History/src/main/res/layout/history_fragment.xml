@@ -5,10 +5,7 @@
     android:layout_height="match_parent"
     android:background="#ededed"
     android:orientation="vertical">
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="skjjksd"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/hist_recycler"
         android:layout_width="match_parent"

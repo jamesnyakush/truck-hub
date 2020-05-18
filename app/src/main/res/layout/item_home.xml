@@ -19,7 +19,7 @@
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/ic_photo_black_48dp"/>
+             />
 
             <TextView
                 android:id="@+id/name"

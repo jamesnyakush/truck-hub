@@ -17,12 +17,13 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
-        <activity android:name="com.jamesnyakush.carhub.ui.home.settings.main.Settings"/>
-        <activity android:name="com.jamesnyakush.carhub.ui.home.about.About" />
+        <activity android:name=".ui.activity.auth.Auth"/>
+
         <activity android:name=".ui.auth.Register" />
         <activity android:name=".ui.auth.Login" />
-        <activity android:name="com.jamesnyakush.carhub.ui.home.main.MainActivity" />
-        <activity android:name=".ui.splash.SplashScreen">
+
+        <activity android:name=".ui.activity.main.MainActivity" />
+        <activity android:name=".ui.activity.splash.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
