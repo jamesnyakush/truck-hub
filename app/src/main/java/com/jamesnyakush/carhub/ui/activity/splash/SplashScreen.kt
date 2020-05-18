@@ -5,8 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.animation.AnimationUtils
 import com.jamesnyakush.carhub.R
+import com.jamesnyakush.carhub.ui.activity.auth.Auth
 import com.jamesnyakush.carhub.ui.activity.main.MainActivity
-import com.jamesnyakush.carhub.ui.auth.Login
 import com.jamesnyakush.carhub.util.pref.SessionManager
 import kotlinx.android.synthetic.main.activity_splash_screen.*
 
@@ -28,12 +28,10 @@ class SplashScreen : AppCompatActivity() {
         dsc!!.startAnimation(myanim)
 
         i = if (!sessionManager.isFirstTime()){
-            Intent(this, Login::class.java)
+            Intent(this, Auth::class.java)
         }else{
             Intent(this, MainActivity::class.java)
         }
-
-
 
 
         val timer = object : Thread() {

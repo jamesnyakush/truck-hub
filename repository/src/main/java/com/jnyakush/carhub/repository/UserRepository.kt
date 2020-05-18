@@ -6,7 +6,7 @@ import com.jnyakush.carhub.network.network.RetrofitBuilder
 import com.jnyakush.carhub.network.network.SafeApiRequest
 import com.jnyakush.carhub.network.network.response.AuthResponse
 
-
+/*
 class UserRepository(
     private val db: AppDatabase
 ) : SafeApiRequest() {
@@ -31,3 +31,4 @@ class UserRepository(
 
     fun getUser() = db.getUserDao().getUser()
 }
+*/

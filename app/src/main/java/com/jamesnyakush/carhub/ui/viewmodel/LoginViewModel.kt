@@ -1,18 +1,26 @@
 package com.jamesnyakush.carhub.ui.viewmodel
 
+import android.content.Intent
 import android.view.View
 import androidx.lifecycle.ViewModel
+import androidx.navigation.Navigation
+import com.jamesnyakush.carhub.ui.activity.main.MainActivity
+import com.jamesnyakush.carhub.ui.fragment.LoginDirections
 
 
-internal class LoginViewModel : ViewModel(){
+internal class LoginViewModel : ViewModel() {
     var email: String? = null
     var password: String? = null
-    var name: String? = null
 
 //    fun getLoggedInUser() = repository.getUser()
 
 
     fun onLoginButtonClick(view: View) {
+
+        Intent(view.context, MainActivity::class.java).also {
+            it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            view.context.startActivity(it)
+        }
 //        if (email.isNullOrEmpty() || password.isNullOrEmpty()) {
 //            view.context.toast("Email  and Password should not be empty")
 //            return
@@ -45,13 +53,10 @@ internal class LoginViewModel : ViewModel(){
     }
 
 
-
     fun onRegister(view: View) {
-//        Intent(view.context, Register::class.java).also {
-//            view.context.startActivity(it)
-//        }
+        val action = LoginDirections.actiontoRegister()
+        Navigation.findNavController(view).navigate(action)
     }
-
 
 
 }
