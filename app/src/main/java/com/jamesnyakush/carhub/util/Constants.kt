@@ -1,9 +1,7 @@
 package com.jamesnyakush.carhub.util
 
 object Constants {
-//    const val BASE_URL: String = "http://192.168.43.201/truckhub/public/api/v1/"
-//    const val BASE_URL: String = "https://truck-hub-271612.appspot.com/api/v1/"
-    const val BASE_URL: String = "http://192.168.56.1/truckhub/public/api/v1/"
+
     const val PREF_NAME = "truckhub"
     const val IS_FIRST_TIME = "isFirstTime"
 

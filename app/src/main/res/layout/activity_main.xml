@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:id="@+id/layout_main"
     android:background="#ededed"
-    tools:context=".ui.home.main.MainActivity">
+    tools:context=".ui.activity.main.MainActivity">
 
 <!--        <com.google.android.material.appbar.AppBarLayout-->
 <!--            android:layout_width="match_parent"-->

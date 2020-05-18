@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import com.jamesnyakush.carhub.history.R
 
 
-class History : Fragment() {
+internal class History : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

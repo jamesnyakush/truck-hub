@@ -15,8 +15,13 @@
             <option value="$PROJECT_DIR$/History" />
             <option value="$PROJECT_DIR$/Home" />
             <option value="$PROJECT_DIR$/Payment" />
+            <option value="$PROJECT_DIR$/about" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/core" />
+            <option value="$PROJECT_DIR$/data" />
+            <option value="$PROJECT_DIR$/network" />
+            <option value="$PROJECT_DIR$/repository" />
+            <option value="$PROJECT_DIR$/settings" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
