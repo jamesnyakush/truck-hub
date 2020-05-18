@@ -3,15 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph_auth"
-    app:startDestination="@id/login2">
+    app:startDestination="@id/login">
 
     <fragment
-        android:id="@+id/login2"
+        android:id="@+id/login"
         android:name="com.jamesnyakush.carhub.ui.fragment.Login"
         android:label="login_fragment"
         tools:layout="@layout/login_fragment" >
         <action
-            android:id="@+id/action_login2_to_register"
+            android:id="@+id/actiontoRegister"
             app:destination="@id/register" />
     </fragment>
     <fragment
@@ -20,7 +20,8 @@
         android:label="register_fragment"
         tools:layout="@layout/register_fragment" >
         <action
-            android:id="@+id/action_register_to_login2"
-            app:destination="@id/login2" />
+            android:id="@+id/actionToLogin"
+            app:destination="@id/login" />
     </fragment>
+
 </navigation>

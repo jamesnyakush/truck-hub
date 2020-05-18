@@ -19,9 +19,6 @@
 
         <activity android:name=".ui.activity.auth.Auth"/>
 
-        <activity android:name=".ui.auth.Register" />
-        <activity android:name=".ui.auth.Login" />
-
         <activity android:name=".ui.activity.main.MainActivity" />
         <activity android:name=".ui.activity.splash.SplashScreen">
             <intent-filter>

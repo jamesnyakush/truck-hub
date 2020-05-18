@@ -2,8 +2,10 @@ package com.jamesnyakush.carhub.ui.viewmodel
 
 import android.view.View
 import androidx.lifecycle.ViewModel
+import androidx.navigation.Navigation
+import com.jamesnyakush.carhub.ui.fragment.RegisterDirections
 
-internal class RegisterViewModel : ViewModel(){
+internal class RegisterViewModel : ViewModel() {
     var email: String? = null
     var password: String? = null
     var name: String? = null
@@ -37,8 +39,7 @@ internal class RegisterViewModel : ViewModel(){
 
 
     fun onLogin(view: View) {
-//        Intent(view.context, Login::class.java).also {
-//            view.context.startActivity(it)
-//        }
+        val action = RegisterDirections.actionToLogin()
+        Navigation.findNavController(view).navigate(action)
     }
 }
