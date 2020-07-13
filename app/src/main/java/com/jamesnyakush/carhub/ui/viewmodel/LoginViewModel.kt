@@ -1,53 +1,74 @@
 package com.jamesnyakush.carhub.ui.viewmodel
 
-import android.content.Intent
 import android.view.View
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.navigation.Navigation
-import com.jamesnyakush.carhub.ui.activity.main.MainActivity
 import com.jamesnyakush.carhub.ui.fragment.LoginDirections
+import com.jamesnyakush.carhub.util.ApiException
+import com.jamesnyakush.carhub.util.coroutines.Coroutines
+import com.jamesnyakush.core.network.EmptyResource
+import com.jamesnyakush.core.toast
 
 
 internal class LoginViewModel : ViewModel() {
+    /*
+        private val userRepository by lazy {
+            UserRepository()
+        }
+    */
     var email: String? = null
     var password: String? = null
 
-//    fun getLoggedInUser() = repository.getUser()
+    //fun getLoggedInUser() = repository.getUser()
+
+    val loginResult by lazy {
+        MutableLiveData<EmptyResource>()
+    }
 
 
     fun onLoginButtonClick(view: View) {
 
-        Intent(view.context, MainActivity::class.java).also {
-            it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-            view.context.startActivity(it)
+        if (email.isNullOrEmpty() || password.isNullOrEmpty()) {
+            view.context?.toast("Email prefix is required and password")
+            return
         }
-//        if (email.isNullOrEmpty() || password.isNullOrEmpty()) {
-//            view.context.toast("Email  and Password should not be empty")
-//            return
-//        }
-//        FirebaseInstanceId.getInstance().instanceId
-//            .addOnCompleteListener(OnCompleteListener{ task ->
-//                if (!task.isSuccessful) {
-//                    val token = task.result?.token
-//
-//                    return@OnCompleteListener
-//                }
-//
-//            })
-//        Coroutines.main {
-//            try {
-//                val authResponse = repository.userLogin(email!!, password!!)
-//                authResponse.user?.let {
-//                    authListener?.onSuccess(it)
-//                    repository.saveUser(it)
-//                    return@main
-//                }
-//                authListener?.onFailiure(authResponse.message!!)
-//            } catch (e: ApiException) {
-//                authListener?.onFailiure(e.message!!)
-//
-//            }
-//        }
+
+        loginResult.value = EmptyResource.loading()
+
+
+        /*
+          FirebaseInstanceId.getInstance().instanceId
+              .addOnCompleteListener(OnCompleteListener{ task ->
+                  if (!task.isSuccessful) {
+                      val token = task.result?.token
+
+                      return@OnCompleteListener
+                  }
+
+              })
+          */
+       /*
+        Coroutines.main {
+            try {
+                val authResponse = userRepository.userLogin(email!!, password!!)
+
+                authResponse.user?.let {
+                    view.context.toast(it.toString())
+                    userRepository.saveUser(it)
+                    loginResult.value = EmptyResource.success()
+                    return@main
+                }
+
+                loginResult.value = EmptyResource.error()
+
+                view.context.toast(authResponse.message!!)
+            } catch (e: ApiException) {
+                view.context.toast(e.message!!)
+
+            }
+        }
+       */
 
 
     }

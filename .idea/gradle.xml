@@ -11,17 +11,19 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/Favourite" />
-            <option value="$PROJECT_DIR$/History" />
-            <option value="$PROJECT_DIR$/Home" />
-            <option value="$PROJECT_DIR$/Payment" />
-            <option value="$PROJECT_DIR$/about" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/core" />
-            <option value="$PROJECT_DIR$/data" />
-            <option value="$PROJECT_DIR$/network" />
-            <option value="$PROJECT_DIR$/repository" />
-            <option value="$PROJECT_DIR$/settings" />
+            <option value="$PROJECT_DIR$/features" />
+            <option value="$PROJECT_DIR$/features/Favourite" />
+            <option value="$PROJECT_DIR$/features/History" />
+            <option value="$PROJECT_DIR$/features/Home" />
+            <option value="$PROJECT_DIR$/features/Payment" />
+            <option value="$PROJECT_DIR$/features/about" />
+            <option value="$PROJECT_DIR$/features/settings" />
+            <option value="$PROJECT_DIR$/lib" />
+            <option value="$PROJECT_DIR$/lib/core" />
+            <option value="$PROJECT_DIR$/lib/data" />
+            <option value="$PROJECT_DIR$/lib/network" />
+            <option value="$PROJECT_DIR$/lib/repository" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
