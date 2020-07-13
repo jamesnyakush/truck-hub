@@ -13,32 +13,6 @@ Truck hub is a project that enables  customer get trucks to book and amke paymen
 
 
 
-
-## Android Development
-
-Truck Hub attempts to make use of the latest Android libraries and best practices:
-* Entirely written in [Kotlin](https://kotlinlang.org/) (including [Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html)) with [ktlint](https://github.com/pinterest/ktlint) for code style
-* Makes use of [Android Jetpack](https://developer.android.com/jetpack/), including:
-  * All appropriate [Architecture Components](https://developer.android.com/jetpack/arch/), including **Lifecycles**, **LiveData**, **ViewModel**, **Room**, **Paging**, **Navigation** and **WorkManager**
-  * [ConstraintLayout](https://developer.android.com/reference/androidx/constraintlayout/widget/ConstraintLayout) 2.0, [ViewPager2](https://developer.android.com/reference/androidx/viewpager2/widget/ViewPager2) and more for layouts and UI
-  * [Android KTX](https://developer.android.com/kotlin/ktx) for more fluent use of Android APIs
-* [Retrofit](https://square.github.io/retrofit/)/[OkHttp](https://square.github.io/okhttp/) for networking
-* [Coil](https://coil-kt.github.io/coil/) for image loading
-* [Mockito](https://github.com/mockito/mockito) For UI Testing
-* [Kodein](https://kodein.org/Kodein-DI/?6.5/android) for dependency injection
-* Designed and built using Material Design [tools](https://material.io/tools/) and [components](https://material.io/develop/android/)
-
-## Features
- Booking<br/>
- Payment - Mpesa payment<br/>
- Favourite <br/>
- History <br/>
- Profile <br/>
- Account Setup
-
-
-## Inspiration
-
 ## Contributors
 Made with [contributors-img](https://contributors-img.web.app).
 
