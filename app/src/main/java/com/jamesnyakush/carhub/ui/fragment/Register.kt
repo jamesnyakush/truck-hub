@@ -22,19 +22,16 @@ internal class Register : Fragment(R.layout.register_fragment) {
         binding.viewmodel = viewModel
 
 
-        /*     viewModel = ViewModelProviders.of(this,factory).get(AuthViewModel::class.java)
-
-     binding.viewmodel = viewModel
-     viewModel.authListener = this
-
-     viewModel.getLoggedInUser().observe(this, Observer { user ->
-         if (user != null) {
-             Intent(this, MainActivity::class.java).also {
-                 it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-                 startActivity(it)
+        /*
+         viewModel.getLoggedInUser().observe(this, Observer { user ->
+             if (user != null) {
+                 Intent(this, MainActivity::class.java).also {
+                     it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                     startActivity(it)
+                 }
              }
-         }
-     })*/
+         })
+     */
     }
 
 }

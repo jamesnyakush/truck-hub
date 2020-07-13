@@ -26,7 +26,7 @@
         tools:layout="@layout/favourite_fragment" />
     <fragment
         android:id="@+id/history_fragment"
-        android:name="com.jamesnyakush.carhub.history.ui.History"
+        android:name="com.jamesnyakush.carhub.history.ui.fragment.History"
         android:label="History"
         app:moduleName="History"
         tools:layout="@layout/history_fragment" />

@@ -35,7 +35,15 @@ android {
     dataBinding {
         enabled = true
     }
-    dynamicFeatures = [":Home", ":Payment", ":Favourite", ":History", ":about", ":settings"]
+
+    dynamicFeatures = [
+            ":features:Home",
+            ":features:Payment",
+            ":features:Favourite",
+            ":features:History",
+            ":features:about",
+            ":features:settings"
+    ]
 
 
 }
@@ -109,4 +117,6 @@ dependencies {
     api 'de.hdodenhof:circleimageview:3.0.1'
 //    api 'com.github.dhaval2404:imagepicker-support:1.5'
     api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    api project(path: ':lib:repository')
+    api project(path: ':lib:core')
 }
