@@ -9,7 +9,7 @@ import com.jamesnyakush.carhub.databinding.RegisterFragmentBinding
 import com.jamesnyakush.carhub.ui.viewmodel.RegisterViewModel
 
 
-internal class Register : Fragment(R.layout.register_fragment) {
+class Register : Fragment(R.layout.register_fragment) {
 
     private lateinit var binding: RegisterFragmentBinding
     private val viewModel by lazy {

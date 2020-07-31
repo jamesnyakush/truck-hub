@@ -9,13 +9,27 @@ import org.kodein.di.generic.bind
 import org.kodein.di.generic.instance
 import org.kodein.di.generic.singleton
 
-class CarHub : Application(), KodeinAware{
-    override val kodein = Kodein.lazy {
-        import(androidXModule(this@CarHub))
+class CarHub : Application() {
 
+    override fun onCreate() {
+        super.onCreate()
 
-        bind() from singleton { SessionManager(instance()) }
-
-
+        initKoin()
+        initStetho()
+        initTimber()
     }
+
+    private fun initKoin() {
+        TODO("Not yet implemented")
+    }
+
+    private fun initStetho() {
+        TODO("Not yet implemented")
+    }
+
+    private fun initTimber() {
+        TODO("Not yet implemented")
+    }
+
+
 }

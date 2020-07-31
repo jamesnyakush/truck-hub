@@ -13,9 +13,10 @@ import com.jamesnyakush.carhub.ui.viewmodel.LoginViewModel
 import com.jamesnyakush.core.network.Status
 import com.jamesnyakush.core.toast
 
-internal class Login : Fragment(R.layout.login_fragment) {
+class Login : Fragment(R.layout.login_fragment) {
 
     private lateinit var binding: LoginFragmentBinding
+
     private val viewModel by lazy {
         ViewModelProviders.of(this).get(LoginViewModel::class.java)
     }
@@ -28,21 +29,19 @@ internal class Login : Fragment(R.layout.login_fragment) {
 
         observeLoginResult()
 
-
-        /*
-            viewModel.getLoggedInUser().observe(this, Observer {user->
-                 if (user != null) {
-                     Intent(this, MainActivity::class.java).also {
-                         it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-                         startActivity(it)
-                     }
-                 }
-             })
-         */
+       /*
+        viewModel.getLoggedInUser().observe(this, Observer { user ->
+            if (user != null) {
+                Intent(this, MainActivity::class.java).also {
+                    it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                    startActivity(it)
+                }
+            }
+        })
+        */
     }
 
     private fun observeLoginResult() {
-        /*
         viewModel.loginResult.observe(viewLifecycleOwner, Observer {result->
             if (result.status == Status.LOADING) {
                /*
@@ -71,8 +70,6 @@ internal class Login : Fragment(R.layout.login_fragment) {
                 }
             }
         })
-
-         */
     }
 
 }
