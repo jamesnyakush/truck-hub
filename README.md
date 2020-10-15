@@ -4,6 +4,8 @@
 
 Truck hub is a project that enables  customer get trucks to book and make payments easily</br>
 Here is a writeup about the project [Wiki](https://github.com/jamesnyakush/truck-hub/wiki)
+
+comming soon to playstore
 ##  Screenshots
 
 
